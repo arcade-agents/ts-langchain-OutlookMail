@@ -14,7 +14,7 @@ import {
 import readline from "node:readline/promises";
 
 // This determines which tools require human in the loop approval to run
-const TOOLS_WITH_APPROVAL = ['OutlookMail_CreateAndSendEmail', 'OutlookMail_ReplyToEmail', 'OutlookMail_SendDraftEmail', 'OutlookMail_UpdateDraftEmail'];
+const TOOLS_WITH_APPROVAL = ['OutlookMail_CreateAndSendEmail', 'OutlookMail_CreateDraftEmail', 'OutlookMail_ListEmails', 'OutlookMail_ListEmailsByProperty', 'OutlookMail_ListEmailsInFolder', 'OutlookMail_ReplyToEmail', 'OutlookMail_SendDraftEmail', 'OutlookMail_UpdateDraftEmail', 'OutlookMail_WhoAmI'];
 
 // Prompt user for yes/no confirmation
 export async function confirm(question: string, rl?: readline.Interface): Promise<boolean> {
